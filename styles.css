@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+    margin: 0;
+    padding: 0;
+    background-image: url('rainbow.jpg'); /* Add a background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+}
+
+.title {
+    font-family: 'Pacifico', cursive; /* Use Pacifico font for the title */
+    font-size: 36px;
+    color: #FF6347; /* Tomato color */
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: calc(100% - 30px); /* Adjust width to account for padding */
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #FF6347; /* Tomato color */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.input-field:focus {
+    border-color: #FF4500; /* OrangeRed color on focus */
+    outline: none;
+}
+
+.search-button {
+    background-color: #FF6347; /* Tomato color */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.search-button:hover {
+    background-color: #FF4500; /* Darker Tomato color on hover */
+}
+
+.weather-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.weather-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.weather-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Make the container responsive */
+    }
+}
