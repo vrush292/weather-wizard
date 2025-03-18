@@ -69,10 +69,8 @@ function changeBackground(temperature, weatherCondition) {
                 imageUrl = 'cloudy.jpg'; // Cool weather image
             } else if (temperature >= 10 && temperature < 20) {
                 imageUrl = 'cool.jpg'; // Mild weather image
-            } else if (temperature >= 20 && temperature <30) {
-                imageUrl = 'day.jpeg'; // Warm weather image
-            } else if (temperature >=30) {
-                imageUrl='sunny.jpg';
+            } else if (temperature >= 20) {
+                imageUrl = 'sunny.jpg'; // Warm weather image
             } else {
                 imageUrl = 'background.jpg'; // Default background image
             }
